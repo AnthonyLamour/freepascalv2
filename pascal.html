@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="utf-8"/>
+		<title>Cours Freepascal</title>
+		<link rel="stylesheet"type="text/css"href="style_pascal.css">
+		<link rel="stylesheet" media="screen and (min-width: 667px) and (max-width: 375px)" href="style_pascal.css" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Adamina" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Convergence" rel="stylesheet"> 
+	
+	</head>
+	
+	<body>
+		
+		<header>
+		
+			<p>Freepascal</p><!--titre de la page-->
+			
+		</header>
+		
+		<h1>Cours Freepascal<h1></br>
+		
+		<h3>Aller directement à :</h3></br></br><!--titre du menu-->
+		
+			<ul  class="menu"> <!--menu sur la gauche de la page-->
+			
+				<li><a href="#structure">Stucture d'un programme en pascal</a></li>
+				<li><a href="#operation">Opérations possibles</a></li>
+				<li><a href="#variable">variables</a></li>
+				<li><a href="#constante">constantes</a></li>
+				<li><a href="#fonction_pascal">fonctions pascal</a></li>
+				<li><a href="#boucle_condition">boucles et conditions</a></li>
+				<li><a href="#procedure_fonction">procédures et fonctions</a></li>
+				<li><a href="#tableau_type">tableaus et types</a></li>
+			
+			</ul></p>
+
+		
+		<section>
+		
+			<aside>
+			
+				<h2 id="structure" class="texte">Stucture d'un programme en pascal:</h2><!--paragraphe structure en pascal-->
+			
+			</aside>
+			
+			<article class="texte">
+			
+				<p>program nom_du_programme;</br></br>uses nom_bibliothèque;</br></br>TYPE</br></br>CONST</br>
+				</br>Fonctions et procédures</br></br>VAR</br></br>BEGIN</p><p class="description">programme principal</p><p>END.</p>
+			
+			</article>
+			
+		</section>
+		
+		<section>
+		
+			<aside>
+			
+				<h2 id="operation" class="texte">Opérations possibles:</h2><!--paragraphe opérations possible selon le type des variabels-->
+			
+			</aside>
+			
+			<article class="texte">
+			
+				<p>Selon les types des variables on peut réaliser différentes opérations:</p>
+				<p class="description">Pour un integer(entier) ces opérations sont : DIV, MOD,*,+,-;</p>
+				<p class="description">Pour un real(réel) ces opérations sont : /,*,+,-;</p>
+				<p class="description">Pour une string(chaine de caractères)ces opérations sont: EXTRACT,+,nom_de_la_chaine[i];</p>
+				<p class="description">Pour un boolean(booléen)ces opérations sont: <,>,=<,>=,<>,=;</p>
+			
+			</article>
+			
+		</section>
+		
+		<section>
+		
+			<aside>
+			
+				<h2 id="variable" class="texte">Variables:</h2><!--paragraphe sur les variables-->
+			
+			</aside>
+			
+			<article class="texte">
+			
+				<p>Les variables servent a stocker des valeurs. Elles possèdent un type qui peut être : </p>
+				
+				<ol>
+				
+					<li>integer (un entier)</li>
+					<li>real (un réel)</li>
+					<li>char (un caractère)</li>
+					<li>string (une chaine de caractères)</li>
+					<li>boolean (un booléen)</li>
+					<li>array (un tableau)</li>
+				
+				</ol>
+				
+				<p>Les opérations élémentaires possibles sur les variables sont:</p>
+				
+				<ol>
+				
+					<li>déclaration :</li>
+					<p class="description">nom de la variable -><strong>nom_de_la_variable:TYPE;</strong>
+					<- type de la variable le type de la variable est toujours précédé du signe : et suivi du signe ;</br>
+					Expemple: <strong>note:REAL;</strong></br>
+					ATTENTION: Un tableau se déclare différament voir la partie tableau.</br>
+					On peut aussi déclarer plusieurs variables <mark>de même type</mark> sur la même ligne.</br>
+					Expemple: <strong>mot1,mot2,mot3:STRING;</strong></p>
+					<li>affectation :</li>
+					<p class="description">On peut affecter à une variable :</br>
+					1-une valeur : nom de la variable-> <strong>nom_de_la_variable:=valeur;</strong>ATTENTION la valeur doit être <mark>du même type que la variable</mark>. Exemple: <strong>note:=20;</strong></br>
+					2-une variable: nom de la variable à modifier-> <strong>nom_de_la_variable:=nom_de_la_variable_2;</strong><- nom de la variable affectée ATTENTION la variable affectée doit être <mark>du même type que la variable à modifier</mark>. Exemple: <strong>mot1:=mot2;</strong> ici les deux variables sont des string (chaines de caractères).</br>
+					3-une expression: nom de la variable -> <strong>nom_de_la_variable:=expression;</strong>ATTENTION le résultat de l'expression doit être <mark>du même type que celui de la variable</mark>. Exemple: <strong>note:=15+5;</strong></p>
+					<li>utilisation :</li>
+					<p class="description">Pour utiliser une variable il suffit de l'avoir déclaré puis de l'appeler en écrivant son nom. Une variable peut être utilisée dans une expression, un tableau, une procedure ou une fonction.
+					<li>ré-affectation :</li>
+					<p class="description">On peut également réaffecter une variable par exemple:<strong>note:=note+1;</strong>ATTENTION le résultat de l'expression doit être <mark>du même type que la variable et les opérations doivent être compatible avec le type de la variable</mark>.</p>
+				
+				</ol>
+			
+			</article>
+			
+		</section>
+		
+		<section>
+		
+			<aside>
+			
+				<h2 id="constante" class="texte">Constantes:</h2><!--paragraphe sur les constantes-->
+			
+			</aside>
+			
+			<article class="texte">
+			
+				<p>Les constantes sont des variables qui ne pourront être changées dans le programme. Elles sont déclarées au début du programme comme suit:</p> 
+				<p class="description">nom_de_la_constante=valeur;</p>
+			
+			</article>
+			
+		</section>
+		
+		<section>
+		
+			<aside>
+			
+				<h2 id="fonction_pascal" class="texte">Fonctions pascal:</h2><!--paragraphe sur les fonctions de pascal-->
+			
+			</aside>
+			
+			<article class="texte">
+			
+				<p>Il existe différentes fonctions de base dans freepascal dans la bibliohèque crt:</br></br>
+				<strong>write</strong> sert à afficher un/des texte/s et/ou une ou des variables.</br> ex: <strong>write('texte1',variable1,'texte2',variable2);</strong></br></br>
+				<strong>writeln</strong> sert à la même chose que write mais rajoute un retour à la ligne.</br> ex: <strong>writeln('texte1',variable1,'texte2',variable2);</strong></br></br>
+				<strong>readln</strong> sert à sauvegarder une valeur entrée par l'utilisateur dans une variable.</br> ex: <strong>readln(nom_de_la_variable);</strong></br></br>
+				<strong>slrscr</strong> sert à éffacer l'écran.</br> ex: <strong>clscr;</strong></p>
+			
+			</article>
+			
+		</section>
+		
+		<section>
+		
+			<aside>
+			
+				<h2 id="boucle_condition" class="texte">Boucles et conditions:</h2><!--paragraphe sur les boucles et les conditions-->
+			
+			</aside>
+			
+			<article class="texte">
+			
+				<p>Il existe différentes boucles :</br></br>
+				<strong>WHILE</strong> condition <strong>DO</strong></p><p class="description"><strong>begin</strong></p><p class="description2">instructions</p><p class="description"><strong>end;</strong></p></br>
+				<p><strong>REPEAT</strong></p><p class="description">instructions</p><strong><p>UNTIL</strong> condition<strong>;</strong></p></br>
+				<p><strong>FOR</strong> variable<strong>:=</strong>valeurinitiale <strong>TO</strong> valeurfinale <strong>DO</strong></p><p class="description"><strong>begin</strong></p><p class="description2">instructions</p><p class="description"><strong>end;</strong></p></br>
+				<p>Et plusieurs conditions:</br></br>
+				<strong>IF</strong> condition <strong>THEN</strong></p><p class="description"><strong>begin</strong></p><p class="description2">instructions</p><p class="description"><strong>end</strong></p><p><strong>ELSE</p><p class="description">begin</strong></p><p class="description2">instructions</p><p class="description"><strong>end;</strong></p></br>
+				<p><strong>CASE</strong> nom_de_la_variable <strong>OF</p><p class="description">begin</p><p class="description2">cas1:</strong>instructions</br><strong>cas2:</strong>instructions...</br>...<strong>casn:</strong>intructions</p><strong><p class="description">end;</strong></p>
+			
+			</article>
+			
+		</section>
+		
+		<section>
+		
+			<aside>
+			
+				<h2 id="procedure_fonction" class="texte">Procédures et fonctions:</h2><!--paragraphe sur les procédure et les fonctions en pascal-->
+			
+			</aside>
+			
+			<article class="texte">
+			
+				<p>Dans freepascal il est aussi possible de créer des procédures et des fonctions.</br>
+				Les procedures exécutent des instructions et ne renvoient rien dans le programme et les fonctions exécutent des instructions et renvoient une valeur de sortie.</br>
+				Les procédures se déclarent comme suit :</br></br>
+				<strong>procedure</strong> nom_de_la_procedure<strong>(</strong>paramètre<strong>:</strong>type_du_paramètre<strong>;var</strong> paramètre(sert à modifier la variable dans la fonction/procedure et enregistrer les changements)<strong>:</strong>type_du_paramètre<strong>);</strong></br></br>
+				<strong>VAR</strong>(variables locales de la fonction)</br></br>
+				<strong>BEGIN</strong></p><p class="description">instructions</p><p><strong>END;</strong></br></br>
+				Une fonction se déclare comme une procedure, il faut juste rajouter le type de la variable de sortie précédé du signe ':' après la déclaration des paramètres, et remplacer procedure par function.</br></br>
+				Exemple:</br>
+				<strong>function</strong> calcul<strong>(</strong>nombre,nombre2<strong>:integer):integer;</strong></br></br>
+				<strong>VAR</strong></p><p class="description">res<strong>:integer;</p><p>BEGIN</strong></p><p class="description">res<strong>:=</strong>nombre+nombre2<strong>;</strong></br>calcul<strong>:=</strong>res;</p><strong><p>END;</strong></br></br>
+				Pour appeler une procédure ou une fonction il suffit d'écrire nom_de_la_procedure_ou_fonction(paramètre1,paramètre2...);</p>
+			
+			</article>
+			
+		</section>
+		
+		<section>
+		
+			<aside>
+			
+				<h2 id="tableau_type" class="texte">Tableaux et types:</h2><!--paragraphe sur les tableaux et la déclaration des types en pascal-->
+			
+			</aside>
+			
+			<article class="texte">
+			
+				<p>Les tableaux se déclarent différament des autres variables. Un tableau se déclare comme suit :</br>
+				nom_du_tableau<strong>:array[1..</strong>longueur_du_tableau...autant qu'il y a de dimensions<strong>] of</strong> type_des_variables_à_l'intérieur_du_tableau<strong>;</strong></br></br>
+				Pour créer un nouveau type il suffit d'entrer les commandes suivantes:</br></br>
+				<strong>TYPE</strong></p>
+				<p class="description">nom_du_type<strong>=</strong>type</p>
+				<p>exemple:</br><strong>TYPE</strong></p>
+				<p class="description">Tableau2dim<strong>=array[1..</strong>TAILLE<strong>,1..</strong>TAILLE<strong>] of</strong> integer<strong>;</strong></p>
+			
+			</article>
+			
+		</section>
+		
+		<footer>
+		
+			<p>Lamour Anthony étudiant en première année à ludus academie.</p>
+		
+		</footer>
+		
+	</body>
+
+</html>

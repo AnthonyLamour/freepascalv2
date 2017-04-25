@@ -1,0 +1,133 @@
+*{ /*supression des marges sur l'ensemble de la page*/
+	
+	margin:0px;
+	padding:0px;
+	
+}
+
+header{
+	
+	text-decoration:underline;
+	
+}
+
+body{
+	
+	background:url("freepascal.jpeg") no-repeat top left,url("fond.png")fixed;/*fond d'écran et logo de freepascal en haut à gauche*/
+	background-size:70px 60px;/*redimension de la taille du logo*/
+	
+}
+
+h1{
+	
+	text-decoration:underline; /* titre principal de la page souligné*/
+	margin:0 auto;/*supression de la marge*/
+	text-align:center;/* titre aligné au centre*/
+	width:50%;/*taille du titre 50%*/
+	font-family: 'Adamina', serif;/*police du titre principal Adamina*/
+
+}
+
+h2{
+	
+	padding: 0px;/*supression des marge pour les sous-titres*/
+	margin:0 auto;
+	text-decoration:underline;/*sous-titres soulignés*/
+	margin-bottom:40px;
+	text-align:center;/*sous-titres alignés au centre*/
+	max-width:800px;/*taille max des sous-titres*/
+	min-width:200px;/*taille min des sous-titres*/
+	font-family: 'Convergence', sans-serif;/*police des sous-titres*/
+	
+}
+
+h3{
+	
+	color:white;/*couleur du titre du menu banche*/
+	border:1px solid black;/*cadre entourant le titre du menu*/
+	width:20%;/* taille du titre du menu 20%*/
+	overflow: hidden;/*si le titre sort du cadre alors il est caché*/
+	position:fixed;/*position du titre du menu fixe*/
+	font-family: 'Cormorant', serif;/*police du titre du menu Cormorant*/
+	
+}
+
+li{
+	
+	margin: 20px;/*marge de 20px pour les listes*/
+	
+}
+
+.menu{
+	
+	float:left;/*menu flottant à gauche*/
+	width:20%;/*taille du menu 20%*/
+	border:1px solid black;/*cadre autoure du menu*/
+	text-align:left;/*texte du aligner à gauche*/
+	color:white;/*couleur du texte en blanc*/
+	position: fixed;/*menu fixe*/
+	overflow: hidden;/*si le menu sort du cadre alors il est caché*/
+	min-width:10%;/*taille min du menu*/
+	max-width:500px;/*taille max du menu*/
+	min-height:10%;/*hauteur min du menu*/
+	margin-bottom: 50px;
+	font-family: 'Cormorant', serif;/*police du menu Cormorant*/
+}
+
+.menu a{
+	
+	color:white;/*liste du menu en blanc*/
+
+}
+
+.texte{
+	
+	width:50%;/*taille des paragraphes 50%*/
+	margin:0 auto;/*supression de la marge*/
+	min-width:50%;/*taille min des paragraphes 50%*/
+	padding: 0 auto;
+	margin-bottom: 50px;
+	font-size:120%;/*taille du texte des paragraphes*/
+	border:3px inset white;/*cadre autoure des paragraphes*/
+	overflow: auto;/*si le paragraphe dépasse le cadre alors apparition d'une scroll barre*/
+
+}
+
+.description{
+	
+	margin:20px;/*mise en page des liste dans les paragraphes et des exemples*/
+	
+}
+
+.description2{
+	
+	margin:40px;/*mise en page des liste dans les paragraphes et des exemples*/
+	
+}
+
+footer{
+	
+	font-size:75%;/*taille du texte contenu dans le footer*/
+	font-family: 'VT323', monospace;/*police du texte VT323*/
+	
+}
+
+@media screen and (max-width:667px){
+
+	.menu{
+		font-size:75%;
+	}
+	h3{
+		display:none;
+	}
+	body{
+		font-size:75%;
+	}
+
+}
+
+@media screen and (max-width:770px){
+	h3{
+		display:none;
+	}
+}
