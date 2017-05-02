@@ -115,19 +115,19 @@ footer{
 @media screen and (max-width:667px){
 
 	.menu{
-		font-size:75%;
+		font-size:75%;/*diminution de la police du texte*/
 	}
 	h3{
-		display:none;
+		display:none;/*supression du titre 3*/
 	}
 	body{
-		font-size:75%;
+		font-size:75%;/*diminution de la police du texte*/
 	}
 
 }
 
 @media screen and (max-width:770px){
 	h3{
-		display:none;
+		display:none;/*supression du titre 3*/
 	}
 }
